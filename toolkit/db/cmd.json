@@ -1,0 +1,91 @@
+{
+  "ai_response": 3,
+  "total": 59,
+  "cmd": [
+    {
+      "name": "menu",
+      "use": 5,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "bell",
+      "use": 6,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "brat",
+      "use": 3,
+      "times": "13/05 18:08:18"
+    },
+    {
+      "name": "qc",
+      "use": 4,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "on",
+      "use": 6,
+      "times": "10/05 17:31:08"
+    },
+    {
+      "name": "stats",
+      "use": 3,
+      "times": "13/05 18:08:18"
+    },
+    {
+      "name": "profile",
+      "use": 2,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "family100",
+      "use": 1,
+      "times": "10/05 17:31:08"
+    },
+    {
+      "name": "play",
+      "use": 3,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "clearsesi",
+      "use": 6,
+      "times": "13/05 18:08:18"
+    },
+    {
+      "name": "setppgc",
+      "use": 4,
+      "times": "10/05 17:31:08"
+    },
+    {
+      "name": "pin",
+      "use": 2,
+      "times": "10/05 17:31:08"
+    },
+    {
+      "name": "set",
+      "use": 3,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "me",
+      "use": 2,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "addprem",
+      "use": 2,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "setrole",
+      "use": 2,
+      "times": "13/05 13:30:15"
+    },
+    {
+      "name": "tagall",
+      "use": 5,
+      "times": "13/05 13:30:15"
+    }
+  ]
+}
