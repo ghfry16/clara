@@ -212,7 +212,7 @@ export default async function on({
 		args: `Harap sertakan teks!`
 	}, async ({ args }) => {
 	    let brat = [
-	      "https://api.yogik.id/maker/brat?text="
+	      "https://aqul-brat.hf.space?text="
 	    ]
 	    let token = String(Date.now()).to('base64').to('charCode').to('base64').to('utf16le')
         let buff = await func.getBuffer(brat.getRandom() + encodeURIComponent(args) + '&token='+token)
