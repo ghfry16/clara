@@ -32,7 +32,7 @@ export default async function on({
 	}) => {
 		let type = ev.getMediaType()
 		let res = await exif[type == "image" ? "writeExifImg" : "writeExifVid"](media, {
-			packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+			packname: '∆ SoftSticks || @Xyroieene',
 			author: ''
 		})
 		Exp.sendMessage(id, {
@@ -93,7 +93,7 @@ export default async function on({
 	   let rurl = `https://api.memegen.link/images/custom/${ats}/${bwh}.png?background=${tmp}`
 	   let buff = await func.getBuffer(rurl);
 		let res = await exif["writeExifImg"](buff, {
-			packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+			packname: '∆ SoftSticks || @Xyroieene',
 			author: ''
 		})
 		Exp.sendMessage(id, {
@@ -193,7 +193,7 @@ export default async function on({
 		}).then(async res => {
 			const buff = Buffer.from(res.data.result.image, 'base64');
 			let ress = await exif["writeExifImg"](buff, {
-				packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+				packname: '∆ SoftSticks || @Xyroieene',
 				author: ''
 			})
 			Exp.sendMessage(id, {
@@ -211,13 +211,11 @@ export default async function on({
 		tag: "maker",
 		args: `Harap sertakan teks!`
 	}, async ({ args }) => {
-	    let brat = [
-	      "https://aqul-brat.hf.space?text="
-	    ]
+	    let brat = ["https://brat.termai.cc/?token=穎杣䑏村呍㍁䑉硅协㍁䍏硁橍杉䑏杕呎杉穎杧呍㉁䑉睅祎ㅁ䍍㍁䍏㑁䍎㍁祎ぁ䍏㍁䍏硁呍杫橎杅橎㵅&text="]
 	    let token = String(Date.now()).to('base64').to('charCode').to('base64').to('utf16le')
         let buff = await func.getBuffer(brat.getRandom() + encodeURIComponent(args) + '&token='+token)
 		let res = await exif["writeExifImg"](buff, {
-			packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+			packname: '∆ SoftSticks || @Xyroieene',
 			author: ''
 		})
 		Exp.sendMessage(id, {
@@ -237,7 +235,7 @@ export default async function on({
 	    let token = String(Date.now()).to('base64').to('charCode').to('base64').to('utf16le')
         let buff = await func.getBuffer(`https://brat.xtermai.xyz/animate?text=${encodeURIComponent(cht.q)}&token=${token}`)
 		let res = await exif["writeExifVid"](buff, {
-			packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+			packname: '∆ SoftSticks || @Xyroieene',
 			author: ''
 		})
 		Exp.sendMessage(id, {
@@ -262,7 +260,7 @@ export default async function on({
 	    for(let i of res){
 	      let buff = await func.getBuffer(i.url)
 		  let res = await exif["writeExifImg"](buff, {
-			packname: 'Sticker Info\n\n✨ Nama : Clara Bot\n👤 Owner : Al Sensei\n💭 Nomor Bot : 6281999585742',
+			packname: '∆ SoftSticks || @Xyroieene',
 			author: ''
 		  })
 		  Exp.sendMessage(id, {
