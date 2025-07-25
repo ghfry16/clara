@@ -206,26 +206,28 @@ export default async function on({
 		});
 	})
 	ev.on({
-		cmd: ['brat', 'bart', 'bratgenerator'],
-		listmenu: ['brat'],
-		tag: "maker",
-		args: `Harap sertakan teks!`
-	}, async ({ args }) => {
-	    let brat = ["https://brat.termai.cc/?token=穎杣䑏村呍㍁䑉硅协㍁䍏硁橍杉䑏杕呎杉穎杧呍㉁䑉睅祎ㅁ䍍㍁䍏㑁䍎㍁祎ぁ䍏㍁䍏硁呍杫橎杅橎㵅&text="]
-	    let token = String(Date.now()).to('base64').to('charCode').to('base64').to('utf16le')
-        let buff = await func.getBuffer(brat.getRandom() + encodeURIComponent(args) + '&token='+token)
-		let res = await exif["writeExifImg"](buff, {
-			packname: '∆ SoftSticks || @Xyroieene',
-			author: ''
-		})
-		Exp.sendMessage(id, {
-			sticker: {
-				url: res
-			}, ai:true
-		}, {
-			quoted: cht
-		})
-	})
+      cmd: ['brat', 'bart', 'bratgenerator'],
+      listmenu: ['brat'],
+      tag: 'maker',
+      args: 'Harap sertakan teks!',
+    },
+    async ({ args }) => {
+      let brat = ['https://brat.termai.cc/?token=穎杣䑏村呍㍁䑉硅协㍁䍏硁橍杉䑏杕呎杉穎杧呍㉁䑉睅祎ㅁ䍍㍁䍏㑁䍎㍁祎ぁ䍏㍁䍏硁呍杫橎杅橎㵅&text='];
+      let token = String(Date.now())
+        .to('base64')
+        .to('charCode')
+        .to('base64')
+        .to('utf16le');
+      let buff = await func.getBuffer(
+        brat.getRandom() + encodeURIComponent(args) + '&token=' + token
+      );
+      let res = await exif['writeExifImg'](buff, {
+        packname: '∆ SoftSticks || @Xyroieene',
+        author: ''
+      });
+      Exp.sendMessage(id, { sticker: { url: res, }, ai: true, }, { quoted: cht, });
+    }
+  )
 	ev.on({
 		cmd: ['bratv','bratvid','bartvideo','bratvideogenerator','bratvideo','bartv','bartvideogenerator'],
 		listmenu: ['bratvideo'],
@@ -273,4 +275,4 @@ export default async function on({
 		  
 		}
 	})
-}
+			}
